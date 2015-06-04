@@ -2,12 +2,15 @@
 <html ng-app="myApp">
 <head>
   <title>Simple app</title>
+  <meta charset='UTF-8'>
   <script
     src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.js">
   </script>
 </head>
 <body>
-  <input ng-model="person.name" type="text" placeholder="Your name">
-  <h1>Hello {{ person.name }} </h1>
+  <div ng-controller='MyController'>
+    <input ng-model="person.name" type="text" placeholder="Your name">
+    <h1>Hello {{ person.name }} </h1>
+  </div>
 </body>
 </html>
